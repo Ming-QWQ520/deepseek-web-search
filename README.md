@@ -44,7 +44,7 @@ Node.js 18+ 环境下无需克隆，直接把以下命令配置为 MCP 客户端
 npx -y github:Ming-QWQ520/deepseek-web-search#v0.1.0
 ```
 
-API Key 通过 `DEEPSEEK_API_KEY` 环境变量注入。DeepSeek Harness、Claude Code、Claude Desktop、Cursor、VS Code、Cline、Roo Code、Continue 等客户端的完整配置见 [集成指南](docs/integrations.md)。
+API Key 通过 `DEEPSEEK_API_KEY` 环境变量注入。DeepSeek Harness、Claude Code、Claude Desktop、Cursor、VS Code、Cline、Roo Code、Continue 等客户端的完整配置见 [集成指南](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/docs/integrations.md)。
 
 ## 配置
 
@@ -136,7 +136,7 @@ API Key 通过 `DEEPSEEK_API_KEY` 环境变量注入。DeepSeek Harness、Claude
 | Continue | `config.yaml` |
 | 自建 Agent | MCP Python/TypeScript SDK 的 stdio 客户端 |
 
-完整路径、配置片段与安全注意事项见 [docs/integrations.md](docs/integrations.md)，可直接复制 [examples](examples/) 中的模板。带命名空间的宿主会显示 `mcp__deepseek_web_search__search` 和 `mcp__deepseek_web_search__fetch`。
+完整路径、配置片段与安全注意事项见 [docs/integrations.md](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/docs/integrations.md)，可直接复制 [examples](https://github.com/Ming-QWQ520/deepseek-web-search/tree/main/examples) 中的模板。带命名空间的宿主会显示 `mcp__deepseek_web_search__search` 和 `mcp__deepseek_web_search__fetch`。
 
 ## 调用示例
 

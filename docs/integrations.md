@@ -54,7 +54,7 @@ node /absolute/path/to/deepseek-web-search/server/index.mjs
 
 ## DeepSeek Harness (dsh)
 
-DeepSeek Harness 通过内置插件 `@deepseek-ai/dsh-mcp-client` 连接 MCP 服务器。在 Agent preset 中加入一行插件配置：
+DeepSeek Harness（[deepseek-ai/dsh](https://github.com/deepseek-ai/dsh)）通过内置插件 `@deepseek-ai/dsh-mcp-client` 连接 MCP 服务器。在 Agent preset 中加入一行插件配置：
 
 ```yaml
 - id: mcp-deepseek-web-search
