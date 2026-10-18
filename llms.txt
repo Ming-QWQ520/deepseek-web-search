@@ -1,0 +1,25 @@
+# DeepSeek Web Search
+
+> Standalone MCP server and ZCode plugin for DeepSeek-powered live web search and page fetching. Two read-only tools, stdio transport, no runtime dependencies.
+
+## Tools
+
+- [search](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/deepseek-web-search/server/index.mjs): Search the live web. Supports `site:`, `-site:`, `"exact phrase"`, `-word`, `lang:zh,en`, `after:YYYY[-MM[-DD]]`, `before:YYYY[-MM[-DD]]`. Returns titles, URLs, snippets, summaries, dates, authority scores and optional page content.
+- [fetch](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/deepseek-web-search/server/index.mjs): Fetch one HTTP(S) URL as Markdown with its title.
+
+## Docs
+
+- [README](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/README.md): installation, configuration, tools, limits, security.
+- [Integrations](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/docs/integrations.md): DeepSeek Harness, Claude Code, Claude Desktop, Cursor, VS Code, Cline, Roo Code, Continue, MCP SDKs.
+- [Agent skill](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/deepseek-web-search/skills/deepseek-web-search/SKILL.md): operating rules for agents.
+- [Agent guide](https://github.com/Ming-QWQ520/deepseek-web-search/blob/main/AGENTS.md): repository instructions for coding agents.
+
+## Quick start
+
+```bash
+DEEPSEEK_API_KEY=sk-... npx -y github:Ming-QWQ520/deepseek-web-search#v0.1.0
+```
+
+## License
+
+AGPL-3.0-only.

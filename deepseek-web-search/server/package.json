@@ -1,5 +1,14 @@
 {
   "name": "deepseek-web-search-mcp",
   "version": "0.1.0",
-  "private": true
+  "description": "DeepSeek web search and page fetch MCP server.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "deepseek-web-search-mcp": "index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "AGPL-3.0-only"
 }

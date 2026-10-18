@@ -5,7 +5,7 @@ description: 通过 DeepSeek 的 search 与 fetch MCP 工具获取实时网页�
 
 # DeepSeek Web Search
 
-本技能提供两个 MCP 工具：`search`（联网搜索）与 `fetch`（网页正文抓取）。它们只读、无副作用，适合作为信息获取的第一入口。
+本技能提供两个 MCP 工具：`search`（联网搜索）与 `fetch`（网页正文抓取）。它们只读、无副作用，适合作为信息获取的第一入口。在带命名空间的宿主中，工具可能显示为 `mcp__deepseek_web_search__search` 和 `mcp__deepseek_web_search__fetch`；参数与语义不变。
 
 ## 适用判断
 

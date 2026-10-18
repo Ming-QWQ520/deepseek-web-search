@@ -1,0 +1,15 @@
+# Add this plugin row to an Agent preset in DeepSeek Harness (dsh).
+# Tools appear in new sessions as:
+#   mcp__deepseek_web_search__search
+#   mcp__deepseek_web_search__fetch
+- id: mcp-deepseek-web-search
+  name: '@deepseek-ai/dsh-mcp-client'
+  config:
+    serverName: deepseek_web_search
+    transport: stdio
+    command: npx
+    args:
+      - '-y'
+      - 'github:Ming-QWQ520/deepseek-web-search#v0.1.0'
+    env:
+      DEEPSEEK_API_KEY: !!js process.env.DEEPSEEK_API_KEY

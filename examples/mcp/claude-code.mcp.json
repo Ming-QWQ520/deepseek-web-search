@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "deepseek_web_search": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:Ming-QWQ520/deepseek-web-search#v0.1.0"
+      ],
+      "env": {
+        "DEEPSEEK_API_KEY": "sk-..."
+      }
+    }
+  }
+}

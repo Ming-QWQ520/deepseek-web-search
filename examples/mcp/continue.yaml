@@ -1,0 +1,8 @@
+mcpServers:
+  - name: deepseek_web_search
+    command: npx
+    args:
+      - -y
+      - github:Ming-QWQ520/deepseek-web-search#v0.1.0
+    env:
+      DEEPSEEK_API_KEY: sk-...

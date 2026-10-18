@@ -1,0 +1,22 @@
+{
+  "name": "deepseek-web-search-mcp",
+  "version": "0.1.0",
+  "description": "DeepSeek web search and page fetch MCP server with a ZCode plugin and an agent skill.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "deepseek-web-search-mcp": "deepseek-web-search/server/index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ming-QWQ520/deepseek-web-search.git"
+  },
+  "homepage": "https://github.com/Ming-QWQ520/deepseek-web-search#readme",
+  "bugs": {
+    "url": "https://github.com/Ming-QWQ520/deepseek-web-search/issues"
+  }
+}

@@ -36,6 +36,16 @@ cd deepseek-web-search
 
 在 ZCode 中把仓库根目录添加为插件市场即可。仓库根目录包含 `marketplace.json`，插件位于 `deepseek-web-search/`。
 
+### 通用 MCP 客户端（npx）
+
+Node.js 18+ 环境下无需克隆，直接把以下命令配置为 MCP 客户端的启动命令：
+
+```bash
+npx -y github:Ming-QWQ520/deepseek-web-search#v0.1.0
+```
+
+API Key 通过 `DEEPSEEK_API_KEY` 环境变量注入。DeepSeek Harness、Claude Code、Claude Desktop、Cursor、VS Code、Cline、Roo Code、Continue 等客户端的完整配置见 [集成指南](docs/integrations.md)。
+
 ## 配置
 
 插件通过 ZCode user config 读取 `api_key`，并注入为 MCP 服务器环境变量 `DEEPSEEK_API_KEY`。
@@ -111,6 +121,23 @@ cd deepseek-web-search
 - 401/402/403/404 与可重试错误的处理边界。
 - QPS、计费与敏感信息约束。
 
+## 集成
+
+服务器使用标准 MCP stdio 传输，可直接接入任何支持 MCP 的 Agent 宿主：
+
+| 宿主 | 适配方式 |
+|---|---|
+| DeepSeek Harness (dsh) | `@deepseek-ai/dsh-mcp-client` 预设插件行 |
+| Claude Code | `.mcp.json` 或 `claude mcp add` |
+| Claude Desktop | `claude_desktop_config.json` |
+| Cursor | `.cursor/mcp.json` |
+| VS Code / Copilot | `.vscode/mcp.json` |
+| Cline / Roo Code | `cline_mcp_settings.json` / `mcp_settings.json` |
+| Continue | `config.yaml` |
+| 自建 Agent | MCP Python/TypeScript SDK 的 stdio 客户端 |
+
+完整路径、配置片段与安全注意事项见 [docs/integrations.md](docs/integrations.md)，可直接复制 [examples](examples/) 中的模板。带命名空间的宿主会显示 `mcp__deepseek_web_search__search` 和 `mcp__deepseek_web_search__fetch`。
+
 ## 调用示例
 
 ```json
@@ -169,10 +196,20 @@ cd deepseek-web-search
 
 ```text
 .
+├── AGENTS.md
+├── LICENSE
 ├── README.md
+├── llms.txt
 ├── marketplace.json
+├── package.json
+├── docs/integrations.md
+├── examples/
+│   ├── deepseek-harness.yaml
+│   ├── mcp/
+│   └── sdk/
 └── deepseek-web-search/
     ├── .zcode-plugin/plugin.json
+    ├── LICENSE
     ├── assets/icon.png
     ├── server/
     │   ├── index.mjs
@@ -190,6 +227,10 @@ DEEPSEEK_API_KEY=sk-... node deepseek-web-search/server/index.mjs
 
 服务器使用 stdio 传输，逐行收发 JSON-RPC 2.0。所有诊断日志写入 stderr，不会污染协议流。
 
+## 许可证
+
+本项目采用 [GNU Affero General Public License v3.0](LICENSE)，SPDX 标识为 `AGPL-3.0-only`。修改本软件并通过网络向用户提供服务时，需按 AGPL 的要求提供对应源代码。
+
 ## 版本
 
-`0.1.0`
+`0.1.0`，许可证 `AGPL-3.0-only`。
