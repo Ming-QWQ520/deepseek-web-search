@@ -13,7 +13,8 @@
       "description_i18n": {
         "zh-CN": "通过 DeepSeek API 进行联网搜索与网页正文抓取。"
       },
-      "category": "utilities"
+      "category": "utilities",
+      "icon": "https://gcore.jsdelivr.net/gh/Ming-QWQ520/deepseek-web-search@v0.1.0/deepseek-web-search/assets/icon.png"
     }
   ]
 }

@@ -190,7 +190,7 @@ API Key 通过 `DEEPSEEK_API_KEY` 环境变量注入。DeepSeek Harness、Claude
 - 不要提交 `.env`、密钥、Cookie 或带凭据的 URL。
 - `fetch` 拒绝包含用户名/密码的 URL。
 - 两个工具均为只读操作，不修改远端内容。
-- 自定义市场图标必须是以 `https://` 开头的可访问 URL；`assets/icon.png` 仅作为自托管素材。
+- 市场图标使用 jsDelivr 直链：`https://gcore.jsdelivr.net/gh/Ming-QWQ520/deepseek-web-search@v0.1.0/deepseek-web-search/assets/icon.png`；源文件为 `assets/icon.png`。
 
 ## 项目结构
 
