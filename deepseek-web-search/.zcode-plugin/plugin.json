@@ -1,0 +1,27 @@
+{
+  "name": "deepseek-web-search",
+  "version": "0.1.0",
+  "description": "DeepSeek web search and page fetch MCP tools for ZCode.",
+  "description_i18n": {
+    "zh-CN": "通过 DeepSeek 搜索与网页抓取 API 提供联网搜索和网页正文读取能力。"
+  },
+  "skills": "./skills",
+  "mcpServers": {
+    "deepseek_web_search": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/index.mjs"],
+      "env": {
+        "DEEPSEEK_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "DeepSeek API Key",
+      "description": "DeepSeek 开放平台的 API Key（sk- 开头）。",
+      "default": "",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "deepseek-web-search-market",
+  "plugins": [
+    {
+      "name": "deepseek-web-search",
+      "source": "./deepseek-web-search",
+      "version": "0.1.0",
+      "description": "DeepSeek web search and page fetch MCP tools for ZCode.",
+      "displayName": "DeepSeek Web Search",
+      "displayName_i18n": {
+        "zh-CN": "DeepSeek 网页搜索"
+      },
+      "description_i18n": {
+        "zh-CN": "通过 DeepSeek API 进行联网搜索与网页正文抓取。"
+      },
+      "category": "utilities"
+    }
+  ]
+}
