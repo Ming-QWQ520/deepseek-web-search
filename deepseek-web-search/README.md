@@ -229,8 +229,8 @@ DEEPSEEK_API_KEY=sk-... node deepseek-web-search/server/index.mjs
 
 ## 许可证
 
-本项目采用 [GNU Affero General Public License v3.0](LICENSE)，SPDX 标识为 `AGPL-3.0-only`。修改本软件并通过网络向用户提供服务时，需按 AGPL 的要求提供对应源代码。
+本项目采用 [MIT License](LICENSE)，SPDX 标识为 `MIT`。可以自由使用、修改、分发和商用，只需保留版权与许可声明。
 
 ## 版本
 
-`0.1.0`，许可证 `AGPL-3.0-only`。
+`0.1.0`，许可证 `MIT`。

@@ -45,4 +45,4 @@ Tool names are `search` and `fetch`. Hosts that namespace MCP tools expose them 
 
 ## License
 
-AGPL-3.0-only. See `LICENSE`.
+MIT. See `LICENSE`.

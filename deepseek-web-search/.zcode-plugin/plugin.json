@@ -5,7 +5,7 @@
   "description_i18n": {
     "zh-CN": "通过 DeepSeek 搜索与网页抓取 API 提供联网搜索和网页正文读取能力。"
   },
-  "license": "AGPL-3.0-only",
+  "license": "MIT",
   "skills": "./skills",
   "mcpServers": {
     "deepseek_web_search": {
